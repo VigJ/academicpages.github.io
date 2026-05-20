@@ -1,8 +1,18 @@
 {% include base_path %}
 
-<meta charset="utf-8">
+<script>
+  document.documentElement.setAttribute(
+    "data-theme",
+    localStorage.getItem("theme") || "dark"
+  );
+</script>
+
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
 {% include seo.html %}
+
+
+<meta name="GPTBot" content="noindex,nofollow">
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
