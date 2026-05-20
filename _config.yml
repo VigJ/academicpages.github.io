@@ -23,7 +23,7 @@ repository               : "VigJ/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Headshot.jpg"
   name             : "Vignesh Jagathese"
   pronouns         : "He/Him"  
   bio              : "Visiting Assistant Professor, Mathematics"
@@ -86,7 +86,7 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   Published:
-    title: 'Published Papers'
+    title: 'Published'
   Preprints:
     title: 'Preprints'
 
