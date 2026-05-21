@@ -1,0 +1,405 @@
+%%%% LAST UPDATED: 06/01/2023
+
+
+
+%%%% PACKAGES
+\usepackage{amssymb, amsmath, amsfonts, amsthm, graphics, mathrsfs, tikz-cd, enumitem, graphicx,latexsym,hyperref,amscd,euscript,mathpazo} %generic
+\usepackage[hmargin= 1 in, vmargin = 1 in]{geometry} %Adjust margins here
+\usepackage{changepage} %pages
+\usepackage{adjustbox, tcolorbox} %boxes
+\setlength{\marginparwidth}{2cm} %for TODOnotes
+\usepackage{todonotes} %TODOs
+\usepackage{relsize, mathbbol} % for prisms
+
+
+
+%%%% WARNING SUPPRESSION + BOOKKEEPING
+%Remove overfull and underfull warnings:
+\hbadness = 1000000000
+\setlength{\hfuzz}{\maxdimen}
+
+%Remove hyperref warnings
+\newcommand{\TOC}{\texorpdfstring} %Use when putting mathmode in the section header 
+%DON'T DO: \section{$p$-adic numbers}
+%Instead: \section{\TOC{\(p\)}{p}-adic numbers}
+%Note that this will not affect the PDF rendering. Only when you use a PDF reader with a table of contents reader will the text in the second argument be used in lieu of the mathmode info. 
+
+%\pagestyle{empty} %REMOVES PAGE NUMBERS!!!! comment (out) in this line if you (don't) want page numbers
+
+%technical babble about changing margins (as in the geometry package above)
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+
+
+%%%% ENVIRONMENTS
+
+% When you first define a new word, use this macro to make it stand out.
+% EG We say that an abelian group $I$ is \newword{injective} if, for any injection $G \to H$, and any map $G \to I$, there is a map $H \to I$ making the obvious diagram commute.
+\newcommand{\newword}[1]{\textbf{\emph{#1}}}
+
+% Makes a smaller matrix for inline constructions
+\newenvironment{sbm} 
+    {\left[ \begin{smallmatrix}
+    }
+    { 
+     \end{smallmatrix} \right]
+    }
+
+% Theorem / corollary / lemma
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+ 
+% "Problem" environment I used for homework questions. use \begin{p}{1.2} \end{p} to make a "problem 1.2" environment, for instance
+\newenvironment{p}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+
+% Open Problem Environment for highlighting open questions in notes. 
+\newenvironment{open}[2][Open Problem]{\begin{tcolorbox}
+\color{red}
+\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}
+
+\end{tcolorbox}}
+
+% Back-highlighted environment, in case it's needed. Change the BLANK to whatever you want
+\newenvironment{BLANK}[2][BLANK]{\begin{tcolorbox}[colback=yellow]
+\color{red}
+\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}
+
+\end{tcolorbox}}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% MACROS %%%%%%%%%%%%%%%%%%%% 
+
+
+%Blackboard bold letters.
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\GG}{\mathbb{G}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\JJ}{\mathbb{J}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\MM}{\mathbb{M}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\OO}{\mathbb{O}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\UU}{\mathbb{U}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\XX}{\mathbb{X}}
+\newcommand{\YY}{\mathbb{Y}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+%Calligraphic letters
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+%SUPER curly letters (use for sheaves and sigma algebras)
+\newcommand{\sA}{\mathscr{A}}
+\newcommand{\sB}{\mathscr{B}}
+\newcommand{\sC}{\mathscr{C}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sF}{\mathscr{F}}
+\newcommand{\sG}{\mathscr{G}}
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sI}{\mathscr{I}}
+\newcommand{\sJ}{\mathscr{J}}
+\newcommand{\sK}{\mathscr{K}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sM}{\mathscr{M}}
+\newcommand{\sN}{\mathscr{N}}
+\newcommand{\sO}{\mathscr{O}}
+\newcommand{\sP}{\mathscr{P}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sR}{\mathscr{R}}
+\newcommand{\sS}{\mathscr{S}}
+\newcommand{\sT}{\mathscr{T}}
+\newcommand{\sU}{\mathscr{U}}
+\newcommand{\sV}{\mathscr{V}}
+\newcommand{\sW}{\mathscr{W}}
+\newcommand{\sX}{\mathscr{X}}
+\newcommand{\sY}{\mathscr{Y}}
+\newcommand{\sZ}{\mathscr{Z}}
+
+%mathfrak upper case
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fB}{\mathfrak{B}}
+\newcommand{\fC}{\mathfrak{C}}
+\newcommand{\fD}{\mathfrak{D}}
+\newcommand{\fE}{\mathfrak{E}}
+\newcommand{\fF}{\mathfrak{F}}
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fH}{\mathfrak{H}}
+\newcommand{\fI}{\mathfrak{I}}
+\newcommand{\fJ}{\mathfrak{J}}
+\newcommand{\fK}{\mathfrak{K}}
+\newcommand{\fL}{\mathfrak{L}}
+\newcommand{\fM}{\mathfrak{M}}
+\newcommand{\fN}{\mathfrak{N}}
+\newcommand{\fO}{\mathfrak{O}}
+\newcommand{\fP}{\mathfrak{P}}
+\newcommand{\fQ}{\mathfrak{Q}}
+\newcommand{\fR}{\mathfrak{R}}
+\newcommand{\fS}{\mathfrak{S}}
+\newcommand{\fT}{\mathfrak{T}}
+\newcommand{\fU}{\mathfrak{U}}
+\newcommand{\fV}{\mathfrak{V}}
+\newcommand{\fW}{\mathfrak{W}}
+\newcommand{\fX}{\mathfrak{X}}
+\newcommand{\fY}{\mathfrak{Y}}
+\newcommand{\fZ}{\mathfrak{Z}}
+
+
+%mathfrak lower case (lie algebras, prime ideals)
+\newcommand{\fa}{\mathfrak{a}}
+\newcommand{\fb}{\mathfrak{b}}
+\newcommand{\fc}{\mathfrak{c}}
+\newcommand{\fd}{\mathfrak{d}}
+\newcommand{\fe}{\mathfrak{e}}
+\newcommand{\ff}{\mathfrak{f}}
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\fh}{\mathfrak{h}}
+\newcommand{\Fi}{\mathfrak{i}} % \fi already taken and I can't fix it, so Fi it is. 
+\newcommand{\fj}{\mathfrak{j}}
+\newcommand{\fk}{\mathfrak{k}}
+\newcommand{\fl}{\mathfrak{l}}
+\newcommand{\fm}{\mathfrak{m}}  \newcommand{\m}{\mathfrak{m}} %Because I use this a lot
+\newcommand{\fn}{\mathfrak{n}}
+\newcommand{\fo}{\mathfrak{o}}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fq}{\mathfrak{q}}
+\newcommand{\fr}{\mathfrak{r}}
+\newcommand{\fs}{\mathfrak{s}}
+\newcommand{\ft}{\mathfrak{t}}
+\newcommand{\fu}{\mathfrak{u}}
+\newcommand{\fv}{\mathfrak{v}}
+\newcommand{\fw}{\mathfrak{w}}
+\newcommand{\fx}{\mathfrak{x}}
+\newcommand{\fy}{\mathfrak{y}}
+\newcommand{\fz}{\mathfrak{z}}
+
+
+%Prisms
+\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+\DeclareSymbolFontAlphabet{\mathbbl}{bbold}
+\newcommand{\Prism}{{\mathlarger{\mathbbl{\Delta}}}}
+
+
+%Better versions of existing commands
+%%%% Set Operations
+\DeclareMathOperator{\union}{\cup}
+\DeclareMathOperator{\intersection}{\cap}
+\DeclareMathOperator*{\bigunion}{\bigcup}
+\DeclareMathOperator*{\bigintersection}{\bigcap}
+\DeclareMathOperator{\disjointunion}{\sqcup}
+\DeclareMathOperator*{\bigdisjointunion}{\bigsqcup}
+%%%% Algebra
+\DeclareMathOperator{\isom}{\cong} %The isomorphism symbol
+\DeclareMathOperator{\Alt}{\bigwedge\nolimits} %This makes alternating tensors look right in displayed equations
+\DeclareMathOperator{\normalsubset}{\trianglelefteq}
+\DeclareMathOperator*{\dirlim}{\varinjlim} 
+\DeclareMathOperator*{\invlim}{\varprojlim}
+\DeclareMathOperator{\tensor}{\otimes}
+\DeclareMathOperator{\ctensor}{\wh{\otimes}} %completed tensor
+\DeclareMathOperator{\dtensor}{\otimes^{\LL}} %derived tensor
+\DeclareMathOperator{\cdtensor}{\wh{\otimes}} %completed derived tensor
+\DeclareMathOperator*{\Tensor}{\bigotimes}
+%%%% (Not) Transversality
+\DeclareMathOperator{\tv}{\pitchfork} %Transverse to symbol
+\DeclareMathOperator{\ntv}{\ov{\cap}} %My homebrewed version of "not transverse"
+%%%% Operators
+\DeclareMathOperator{\e}{\varepsilon} %The better epsilon
+\DeclareMathOperator{\vphi}{\varphi} %The better phi
+\renewcommand{\emptyset}{\varnothing} %The better empty set
+%%%% Inversions
+\newcommand{\inv}{^{-1}}
+\newcommand{\recip}{\frac{1}}
+%%%% Maps
+\newcommand{\xto}{\xrightarrow}
+\newcommand{\from}{\leftarrow}
+\newcommand{\xfrom}{\xleftarrow}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+%%%% Over character modifiers 
+%(they all scale with respect to size of term(s) inside bracket)
+\newcommand{\ov}{\overline}
+\newcommand{\ol}{\overline}
+\newcommand{\ul}{\underline}
+\newcommand{\wt}{\widetilde}
+\newcommand{\wh}{\widehat}
+
+%Various group types I use a lot
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\PGL}{PGL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\PSL}{PSL}
+\DeclareMathOperator{\Orth}{O}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Mat}{Mat}    
+\DeclareMathOperator{\Sym}{Sym}
+
+%Linear Algebra
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\im}{im} 
+\DeclareMathOperator{\coim}{coim}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\rank}{rank}    
+\DeclareMathOperator{\diag}{diag}  
+\DeclareMathOperator{\codim}{codim}
+
+%Commutative Algebra/Algebraic Geometry
+%%%% Functors
+\DeclareMathOperator{\Tor}{Tor}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\Spe}{Sp\'e}
+\DeclareMathOperator{\Hilb}{Hilb}
+\DeclareMathOperator{\RHom}{RHom} %derived Hom
+%%%% Ideals
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\MaxSpec}{MaxSpec}
+\DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Ann}{Ann}   
+\DeclareMathOperator{\ann}{Ann}
+%%%% Dimension/Degree
+\DeclareMathOperator{\len}{len}
+\DeclareMathOperator{\trdeg}{trdeg}
+\DeclareMathOperator{\height}{ht}
+\DeclareMathOperator{\Idim}{InjDim}
+\DeclareMathOperator{\Pdim}{ProjDim}
+\DeclareMathOperator{\Gdim}{glDim}
+%%%% Local Rings
+\DeclareMathOperator{\loc}{(R,\fm)}   
+\DeclareMathOperator{\locr}{(R,\fm, \fK)}
+\DeclareMathOperator{\complete}{^\wedge}
+\DeclareMathOperator{\Soc}{Soc}
+%%%% Sheaves
+\DeclareMathOperator{\Ox}{\cO_X}
+\DeclareMathOperator{\Oy}{\cO_Y}
+\DeclareMathOperator{\Oz}{\cO_Z}
+\DeclareMathOperator{\Ix}{\cI_X}
+\DeclareMathOperator{\Iy}{\cI_Y}
+\DeclareMathOperator{\Iz}{\cI_Z}
+%%%% Divisors
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\CDiv}{CaDiv}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\CCl}{CaCl}
+%%%% Complex Geometry
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\an}{an}
+%%%% Positive Characteristic
+\newcommand{\pe}{^{p^e}}
+\newcommand{\bpe}{^{[p^e]}}
+\newcommand{\F}{F_*}
+\newcommand{\Fe}{F^e_*}
+%%%% Thresholds/Multiplicities
+\DeclareMathOperator{\fpt}{fpt}
+\DeclareMathOperator{\lct}{lct} 
+\DeclareMathOperator{\ppt}{+pt} 
+\DeclareMathOperator{\HK}{HK}
+
+%curly versions for sheaf constructions
+\DeclareMathOperator{\HHom}{\mathcal{H} \textit{om}}
+\DeclareMathOperator{\EExt}{\mathcal{E} \textit{xt}}
+\DeclareMathOperator{\EEnd}{\mathcal{E} \textit{nd}}
+\DeclareMathOperator{\TTor}{\mathcal{T} \textit{or}}
+\DeclareMathOperator{\KKer}{\mathcal{K}\textit{er}}
+\DeclareMathOperator{\CCoker}{\mathcal{C} \textit{oker}}
+\newcommand{\IIm}{\mathop{\mathcal{I} \textit{m}}}
+\DeclareMathOperator{\SSpec}{\mathcal{S} \textit{pec}}
+\DeclareMathOperator{\PProj}{\mathcal{P} \textit{roj}}
+
+%Category Theory/Homological Algebra
+\DeclareMathOperator{\Obj}{Obj}
+\DeclareMathOperator{\Mor}{Mor}
+\DeclareMathOperator{\op}{^{op}}
+\DeclareMathOperator{\cohom}{H} %So "H" doesn't appear italic in theorem environments
+\DeclareMathOperator{\Der}{D} %Derived Category
+\DeclareMathOperator{\BDer}{D^b} %Bounded Derived Category
+\DeclareMathOperator{\RDer}{R} %Derived functor
+\DeclareMathOperator{\LDer}{L} %Derived functor
+
+%Categories
+\DeclareMathOperator{\Mod}{Mod} %Modules
+\DeclareMathOperator{\AbGp}{AbGp} %Abelian Groups
+\DeclareMathOperator{\Grp}{Grp} %Groups
+\DeclareMathOperator{\Top}{Top} %Topological Spaces
+\DeclareMathOperator{\AffSch}{AffSch} %Affine Schemes
+\DeclareMathOperator{\Sh}{Sh} %Sheaves
+\DeclareMathOperator{\Sch}{Sch} %Schemes
+\DeclareMathOperator{\QCoh}{QCoh} %Quasicoherent Sheaves
+\DeclareMathOperator{\Coh}{Coh} %Coherent Sheaves
+\DeclareMathOperator{\OxMod}{\cO_X-Mod} %Ox Modules
+\DeclareMathOperator{\OyMod}{\cO_Y-Mod} %Oy Modules
+\DeclareMathOperator{\LRSp}{LRSp} %Locally Ringed Spaces
+\DeclareMathOperator{\RSp}{RSp} %Ringed Spaces
+\DeclareMathOperator{\Vect}{Vect} %Vector Spaces
+\DeclareMathOperator{\Bund}{Bund} %Vector Bundles
+\DeclareMathOperator{\Nat}{Nat} %Natural Transformations
+\DeclareMathOperator{\Ring}{Ring} %Rings
+\DeclareMathOperator{\CRing}{CRing} %Commutative Rings
+\DeclareMathOperator{\Perv}{Perv} %Perverse Sheaves
+\DeclareMathOperator{\PervCons}{Perv_{Cons}} %Perverse Constructible Sheaves
+\DeclareMathOperator{\CovSp}{CovSp}
+\DeclareMathOperator{\LCS}{LocConstSh}
+
+
