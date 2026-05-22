@@ -34,7 +34,7 @@ These are notes from a workshop on Notions of Singularity in Different Character
    target="_blank">
 [25w5409]
 </a>
-at Banff Interational Research Station, held in October 2025. Much like my notes from the boot camp, these notes are also hasty, incomplete, and were written mostly for my own use.
+at Banff Interational Research Station, held in October 2025. Much like my notes from the SRI bootcamp, these notes are incomplete and written mostly for my own use.
 </p>
 
 <hr style="border-color: rgba(255,255,255,0.12);">
@@ -229,7 +229,7 @@ How do I take these notes?
 --------------------------
 
 Many of these notes were Live-TeXed, though I personally do not recommend doing this and don't do it anymore. I have found that I internalize information much better by writing it down then, at a later point, typing the notes to reinforce them ([This is backed up by modern research!](https://www.psychologytoday.com/us/blog/recovery-from-brain-injury/202512/to-type-or-to-write-that-is-the-question)). The following tips, however, are still useful for speeding up your TeXing in general: 
-1. **Write Lots of Macros, and Use Them!** Most people do this to some degree (e.g. use `\ZZ` instead of `\mathbb{Z}`) but I would encourage using way more macros than this. Any time your instructor introduces notation, create a macro and toss it in your header file; I promise this makes typing go by much faster. You can also write some fun ones like `\inv := ^{-1}` or `\recip := \frac{}`; see (or steal) my header file {LINK!} for more examples of macros. 
+1. **Write Lots of Macros, and Use Them!** Most people do this to some degree (e.g. use `\ZZ` instead of `\mathbb{Z}`) but I would encourage using way more macros than this. Any time your instructor introduces notation, create a macro and toss it in your header file; I promise this makes typing go by much faster. You can also write some fun ones like `\inv := ^{-1}` or `\recip := \frac{}`; see (or steal) my [header file](/files/header.sty) for more examples of macros. 
 1. **Use a Multimodal Editor.** I use [Neovim](https://neovim.io/) with [Treesitter](https://tree-sitter.github.io/tree-sitter/) and [Vimtex](https://github.com/lervag/vimtex) for syntax highlighting and autocomplete. Once you get comfortable using vim keybindings, you can navigate around a document like a pro and type down content much faster. It's a steep learning curve, but don't be discouraged!
 1. **Use a Graphical Tool for TikZ Diagrams.** Pretty self-explanatory, and most people do this anyway. Most people use [Quiver](https://q.uiver.app/), but I also like [https://tikzcd.yichuanshen.de/](https://tikzcd.yichuanshen.de/). 
 
