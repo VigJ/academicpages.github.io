@@ -78,7 +78,7 @@ ArXiv
 <br>
 <em>
 joint with
-<a href="https://mathweb.ucsd.edu/~jjgarzel/">Jack J Garzella</a>,
+<a href="https://jjgarzella.github.io/">Jack J Garzella</a>,
 </em>
 <br>
 Submitted.

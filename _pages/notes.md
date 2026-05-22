@@ -3,7 +3,7 @@ permalink: /notes
 title: "Notes"
 author_profile: true
 ---
-I've typed up notes from classes that I've taken and short math programs (summer schools, conferences, etc.) that I've attended. You can read these free of charge, under the condition that all typos or errors be sent to me. As my note taking ability has improved over time, within each category, these notes are also listed in descending order of quality. 
+I've typed up notes from classes that I've taken and short math programs (summer schools, conferences, etc.) that I've attended. You can read these free of charge, under the condition that all typos or errors be sent to me. As my note taking ability has improved over time, within each category these notes are listed in descending order of quality. 
 
 
 Conferences, Reading Groups
