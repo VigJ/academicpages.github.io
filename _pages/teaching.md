@@ -3,8 +3,61 @@ permalink: /teaching
 title: "Teaching"
 author_profile: true
 ---
-TO DO!
+![One of my students made cookies for me! It was a very thoughtful (and tasty) gift!](/files/TeachingCookie.jpg){: width="25%" .align-right style="margin-left: 0.4em;"}
 
+I view teaching as a fundamental component of my role as an academic. To be an effective teacher is to be an effective mathematical communicator, an enthusiastic ambassador of mathematics, and a positive, welcoming presence for students. I wholeheartedly endorse Federico Ardila-Mantilla's [axioms for teaching mathematics](https://www.ams.org/publications/journals/notices/201610/rnoti-p1164.pdf) and treat them as guiding principals within my classroom. 
 
+<br>
 
+Instructor Positions
+-------------------- 
+- **(Spring 2025, UIC) Math 109: College Algebra Workshop**
+<a href="/files/2025_109Syllabus.pdf"
+   class="btn btn--primary"
+   style="text-decoration: none;"
+   target="_blank">
+Syllabus
+</a>
+- **(Fall 2023, UIC) Math 090: Intermediate Algebra** 
+<a href="/files/2023_Math090Syllabus.pdf"
+   class="btn btn--primary"
+   style="text-decoration: none;"
+   target="_blank">
+Syllabus
+</a>
+- **(Spring 2023, UIC) Math 104: Mathematical Reasoning Workshop**
+<a href="/files/2023_Math104Syllabus.pdf"
+   class="btn btn--primary"
+   style="text-decoration: none;"
+   target="_blank">
+Syllabus
+</a>
+<a href="/files/2023_Math104Project.pdf"
+   class="btn btn--primary"
+   style="text-decoration: none;"
+   target="_blank">
+Project
+</a>
+- **(Fall 2022, UIC) Math 109: College Algebra Workshop** 
+<a href="/files/2022_109Syllabus.pdf"
+   class="btn btn--primary"
+   style="text-decoration: none;"
+   target="_blank">
+Syllabus
+</a>
 
+Teaching Assistant Positions 
+---------------------------- 
+- (Spring 2025, UIC) Math 110: College Algebra 
+- (Spring 2023, UIC) Math 105: Mathematical Reasoning
+- (Fall 2022, UIC) Math 110: College Algebra
+- (Fall 2021, UIC) Math 110: College Algebra
+- (Fall 2021, UIC) Math 125: Elementary Linear Algebra
+
+Other Positions
+---------------
+- **(Fall 2025, UIC) Teaching Assistant Coordinator** <br>
+  I worked with the Associate Head of Instruction at UIC to train and evaluate new TAs in the department. 
+- (Fall 2023, UIC) Grader for Math 516, Abstract Algebra I
+- (Winter 2020, UofM) Grader for Math 417, Linear Algebra 
+- (Winter 2020, UofM) Grader for Math 452, Multivariable Analysis
