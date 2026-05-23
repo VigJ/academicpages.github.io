@@ -3,6 +3,12 @@ permalink: /publications
 title: "Publications"
 author_profile: true
 ---
+<a href="https://arxiv.org/search/math?searchtype=author&query=Jagathese,+V"
+   class="btn btn--primary"
+   style="text-decoration: none;"
+   target="_blank">
+My ArXiv Page
+</a>
 
 Published
 --------- 
@@ -27,9 +33,9 @@ ArXiv
 joint with
 <a href="https://sites.google.com/view/martabenozzo">Marta Benozzo</a>,
 <a href="https://vaibhav-pandey1.github.io/">Vaibhav Pandey</a>,
-<a href="https://sites.google.com/view/pedroramirezmoreno">Pedro Ramírez-Moreno</a>,
+<a href="https://sites.google.com/cimat.mx/pedroramirezmoreno/home-page">Pedro Ramírez-Moreno</a>,
 <a href="https://www.math.utah.edu/~schwede/">Karl Schwede</a>, and
-<a href="https://math.ua.edu/directory/prashanth-sridhar/">Prashanth Sridhar</a>
+<a href="https://math.ua.edu/people/prashanth-sridhar/">Prashanth Sridhar</a>
 </em>
 <br>
   Mathematische Zeitschrift, <em>(to appear)</em>
