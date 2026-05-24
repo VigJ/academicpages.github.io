@@ -74,7 +74,7 @@ Preprints
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 ">
-<strong>(2025) On F-Pure thresholds and quasi-F-Purity of hypersurfacs</strong>
+<strong>(2025) On F-Pure thresholds and quasi-F-Purity of hypersurfaces</strong>
 <a href="https://arxiv.org/abs/2509.06211"
    class="btn btn--primary"
    style="text-decoration: none;"
