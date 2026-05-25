@@ -16,6 +16,17 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
 
 
 <div style="height: 8rem;"></div>
+<div style="
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  color: white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+">
+
+
+
 <h3 style="text-align: center;">Me doing things in various places</h3>
 
 <!-- =========================
@@ -195,8 +206,8 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
     "Santiago De Compostela, Spain (2025)",
     "Madrid, Spain (2025)",
     "Chicago, Illinois (2025)",
-    "Boulder, Colorado (2025)",
-    "near Fort Collins Colorado (2025)",
+    "near Boulder, Colorado (2025)",
+    "near Fort Collins, Colorado (2025)",
     "Toronto, Canada (2025)",
     "Madrid, Spain (2025)",
     "Chicago, Illinois (2026)",
@@ -204,7 +215,7 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
     "Washington D.C. (2026)",
     "Salt Lake City, Utah (2026)",
     "Chicago, Illinois (2026)",
-    "Chicago, Illinois (2026)",
+    "Sears Tower, Chicago, Illinois (2026)",
     "Chicago, Illinois (2026)"
   ];
 
@@ -313,3 +324,5 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
     },
   });
 </script>
+
+</div>
