@@ -34,12 +34,6 @@ Syllabus
    target="_blank">
 Syllabus
 </a>
-<a href="/files/2023_Math104Project.pdf"
-   class="btn btn--primary"
-   style="text-decoration: none;"
-   target="_blank">
-Project
-</a>
 - **(Fall 2022, UIC) Math 109: College Algebra Workshop** 
 <a href="/files/2022_109Syllabus.pdf"
    class="btn btn--primary"

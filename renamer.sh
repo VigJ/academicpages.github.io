@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Rename all image files in a folder to:
-# 1.jpg, 2.jpeg, 3.heic, ...
-# while preserving original file extensions
+# bash script to rename all the cat files. keeps original file type (except for MP4 since I forgot)
 
 DIR="images/Cat"
 
