@@ -29,12 +29,8 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
 
 <h3 style="text-align: center;">Me doing things in various places</h3>
 
-<!-- =========================
-     RANDOMIZED IMAGE CAROUSEL
-     academicpages / Jekyll compatible
-     ========================= -->
 
-<!-- Swiper CSS -->
+<!-- Carousel CSS -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -111,7 +107,6 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
   }
 </style>
 
-<!-- Carousel -->
 <div class="swiper random-carousel">
   <div class="swiper-wrapper" id="carousel-wrapper"></div>
 
@@ -119,159 +114,60 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
   <div class="swiper-button-prev"></div>
 </div>
 
-<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  /*
-    Put your images in:
 
-    /images/carousel/
-
-    You may use any filenames you want.
-  */
-
-  const filenames = [
-    "2018_SCTFinish.jpg",
-    "2020_Arlington.jpg",
-    "2020_VegasFerrisWheel.jpg",
-    "2022_Wrightbrothers.jpg",
-    "2023_ArchTour.jpg",
-    "2023_Breakfast.jpg",
-    "2023_ContainerStore.jpg",
-    "2023_Dashunabe.jpg",
-    "2023_pirate.jpg",
-    "2024_Amsterdam.jpg",
-    "2024_AmsterdamSolo.jpg",
-    "2024_Beer.jpg",
-    "2024_InnsbruckBase.jpg",
-    "2024_innsbruckMountain.jpg",
-    "2024_Mainz.jpg",
-    "2024_Robin.jpg",
-    "2024_Zurich.jpg",
-    "2025_BanffBig1.jpg",
-    "2025_BanffBig2.jpg",
-    "2025_BanffGroup.jpg",
-    "2025_BanffSolo.jpg",
-    "2025_Camino.jpg",
-    "2025_CatCradle.jpg",
-    "2025_Corn.jpg",
-    "2025_KarenConf.jpg",
-    "2025_MadridCathedral.jpg",
-    "2025_OutsideCat.jpg",
-    "2025_PostCamino.jpg",
-    "2025_PreCamino.jpg",
-    "2025_RobinLecture.jpeg",
-    "2025_SRIHike_Small.jpg",
-    "2025_SRIHikeBig.jpg",
-    "2025_Toronto.jpg",
-    "2025MadridPark.jpg",
-    "2026_COLD.jpg",
-    "2026_GradClass.jpg",
-    "2026_JMMDC.jpg",
-    "2026_JSmithSphynx.jpg",
-    "2026_PhDGrad.HEIC",
-    "2026_SearsTower.HEIC",
-    "2026_ThesisDefense.jpeg"
+  //images in images/carousel. just add another triple here
+  const images = [
+    ["2018_SCTFinish.jpg", "Racing a Solar Car", "Bend, Oregon (2018)"],
+    ["2020_Arlington.jpg", "Working in Industry", "Arlington, Virginia (2020)"],
+    ["2020_VegasFerrisWheel.jpg", "Tallest Ferris Wheel in the US", "Las Vegas, Nevada (2020)"],
+    ["2022_Wrightbrothers.jpg", "Wright Brothers Memorial", "Kill Devil Hills, North Carolina (2022)"],
+    ["2023_ArchTour.jpg", "Architecture Tour", "Chicago, Illinois (2023)"],
+    ["2023_Breakfast.jpg", "6AM TA Breakfast", "Chicago, Illinois (2023)"],
+    ["2023_ContainerStore.jpg", "The Container Store", "Chicago, Illinois (2023)"],
+    ["2023_Dashunabe.jpg", "Dashunabe Tea House", "Boulder, Colorado (2023)"],
+    ["2023_pirate.jpg", "Arr Matey", "Chicago, Illinois (2023)"],
+    ["2024_Amsterdam.jpg", "Train Museum Exhibit", "Amsterdam, The Netherlands (2024)"],
+    ["2024_AmsterdamSolo.jpg", "Amsterdam in the Fall", "Amsterdam, The Netherlands (2024)"],
+    ["2024_Beer.jpg", "Beer", "Utrecht, The Netherlands (2024)"],
+    ["2024_InnsbruckBase.jpg", "Zoo at the base of a Mountain", "Innsbruck, Austria (2024)"],
+    ["2024_innsbruckMountain.jpg", "The Top of Innsbruck", "Innsbruck, Austria (2024)"],
+    ["2024_Mainz.jpg", "Lovely German Trains", "Frankfurt, Germany (2024)"],
+    ["2024_Robin.jpg", "Cat on Shoulder", "Chicago, Illinois (2024)"],
+    ["2024_Zurich.jpg", "Half Steamed", "Zurich, Switzerland (2024)"],
+    ["2025_BanffBig1.jpg", "Lake Louise in Banff", "Banff, Alberta (2025)"],
+    ["2025_BanffBig2.jpg", "Lake Louise in Banff", "Banff, Alberta (2025)"],
+    ["2025_BanffGroup.jpg", "Lake Louise in Banff", "Banff, Alberta (2025)"],
+    ["2025_BanffSolo.jpg", "Lake Louise in Banff", "Banff, Alberta (2025)"],
+    ["2025_Camino.jpg", "On El Camino", "Neda, Spain (2025)"],
+    ["2025_CatCradle.jpg", "Robin, the Cat", "Chicago, Illinois (2025)"],
+    ["2025_Corn.jpg", "Consumed by the Corn", "'The Fun Farm', Nebraska (2025)"],
+    ["2025_KarenConf.jpg", "Karen Smith's 65th Birthday Conference", "Guanajuato, Mexico (2025)"],
+    ["2025_MadridCathedral.jpg", "Spanish Cathedral", "Madrid, Spain (2025)"],
+    ["2025_OutsideCat.jpg", "Outside Cat", "Chicago, Illinois (2025)"],
+    ["2025_PostCamino.jpg", "At the End of El Camino", "Santiago De Compostela, Spain (2025)"],
+    ["2025_PreCamino.jpg", "On the Way to El Camino", "Madrid, Spain (2025)"],
+    ["2025_RobinLecture.jpeg", "Lecture for Cat", "Chicago, Illinois (2025)"],
+    ["2025_SRIHike_Small.jpg", "Summer Research Institute Hike", "near Boulder, Colorado (2025)"],
+    ["2025_SRIHikeBig.jpg", "Summer Research Institute Hike", "near Fort Collins, Colorado (2025)"],
+    ["2025_Toronto.jpg", "The CN Tower", "Toronto, Canada (2025)"],
+    ["2025MadridPark.jpg", "El Retiro Park", "Madrid, Spain (2025)"],
+    ["2026_COLD.jpg", "COLD!", "Chicago, Illinois (2026)"],
+    ["2026_GradClass.jpg", "UIC PhD Graduates", "Chicago, Illinois (2026)"],
+    ["2026_JMMDC.jpg", "Mathematics Advocacy at the JMM", "Washington D.C. (2026)"],
+    ["2026_JSmithSphynx.jpg", "GilGal Sculpture Garden (with Joseph Smith)", "Salt Lake City, Utah (2026)"],
+    ["2026_PhDGrad.HEIC", "Graduation", "Chicago, Illinois (2026)"],
+    ["2026_SearsTower.HEIC", "Tall Jump", "Sears Tower, Chicago, Illinois (2026)"],
+    ["2026_ThesisDefense.jpeg", "My Thesis Defense", "Chicago, Illinois (2026)"]
   ];
 
-  const descriptions = [
-    "Bend, Oregon (2018)",
-    "Arlington, Virginia (2020)",
-    "Las Vegas, Nevada (2020)",
-    "Kill Devil Hills, North Carolina (2022)",
-    "Chicago, Illinois (2023)",
-    "Chicago, Illinois (2023)",
-    "Chicago, Illinois (2023)",
-    "Boulder, Colorado (2023)",
-    "Chicago, Illinois (2023)",
-    "Amsterdam, The Netherlands (2024)",
-    "Amsterdam, The Netherlands (2024)",
-    "Utrecht, The Netherlands (2024)",
-    "Innsbruck, Austria (2024)",
-    "Innsbruck, Austria (2024)",
-    "Frankfurt, Germany (2024)",
-    "Chicago, Illinois (2024)",
-    "Zurich, Switzerland (2024)",
-    "Banff, Alberta (2025)",
-    "Banff, Alberta (2025)",
-    "Banff, Alberta (2025)",
-    "Banff, Alberta (2025)",
-    "Neda, Spain (2025)",
-    "Chicago, Illinois (2025)",
-    "'The Fun Farm', Nebraska (2025)",
-    "Guanajuato, Mexico (2025)",
-    "Madrid, Spain (2025)",
-    "Chicago, Illinois (2025)",
-    "Santiago De Compostela, Spain (2025)",
-    "Madrid, Spain (2025)",
-    "Chicago, Illinois (2025)",
-    "near Boulder, Colorado (2025)",
-    "near Fort Collins, Colorado (2025)",
-    "Toronto, Canada (2025)",
-    "Madrid, Spain (2025)",
-    "Chicago, Illinois (2026)",
-    "Chicago, Illinois (2026)",
-    "Washington D.C. (2026)",
-    "Salt Lake City, Utah (2026)",
-    "Chicago, Illinois (2026)",
-    "Sears Tower, Chicago, Illinois (2026)",
-    "Chicago, Illinois (2026)"
-  ];
-
-  const titles = [
-    "Racing a Solar Car",
-    "Working in Industry",
-    "Tallest Ferris Wheel in the US",
-    "Wright Brothers Memorial",
-    "Architecture Tour",
-    "6AM TA Breakfast",
-    "The Container Store",
-    "Dashunabe Tea House",
-    "Arr Matey",
-    "Train Museum Exhibit",
-    "Amsterdam in the Fall",
-    "Beer",
-    "Zoo at the base of a Mountain",
-    "The Top of Innsbruck",
-    "Lovely German Trains",
-    "Cat on Shoulder",
-    "Half Steamed",
-    "Lake Louise in Banff",
-    "Lake Louise in Banff",
-    "Lake Louise in Banff",
-    "Lake Louise in Banff",
-    "On El Camino",
-    "Robin, the Cat",
-    "Consumed by the Corn",
-    "Karen Smith's 65th Birthday Conference",
-    "Spanish Cathedral",
-    "Outside Cat",
-    "At the End of El Camino",
-    "On the Way to El Camino",
-    "Lecture for Cat",
-    "Summer Research Institute Hike",
-    "Summer Research Institute Hike",
-    "The CN Tower",
-    "El Retiro Park",
-    "COLD!",
-    "UIC PhD Graduates",
-    "Mathematics Advocacy at the JMM",
-    "GilGal Sculpture Garden (with Joseph Smith)",
-    "Graduation",
-    "Tall Jump",
-    "My Thesis Defense"
-  ];
-
-  const images = [];
-
-  for (let i = 0; i < filenames.length; i++) {
-    images.push({
-      src: `/images/carousel/${filenames[i]}`,
-      title: titles[i],
-      description: descriptions[i]
-    });
-  }
+  const imagesData = images.map(([filename, title, description]) => ({
+    src: `/images/carousel/${filename}`,
+    title,
+    description
+  }));
 
   // Fisher-Yates shuffle
   function shuffle(array) {
@@ -281,12 +177,12 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
     }
   }
 
-  // Randomize order on every page load
-  shuffle(images);
+  shuffle(imagesData);
 
   const wrapper = document.getElementById("carousel-wrapper");
 
-  images.forEach(image => {
+  // generate carousel in random order, with title and descriptions
+  imagesData.forEach(image => {
     const slide = document.createElement("div");
     slide.className = "swiper-slide";
 
