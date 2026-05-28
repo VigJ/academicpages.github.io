@@ -157,8 +157,8 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
     ["2026_GradClass.jpg", "UIC PhD Graduates", "Chicago, Illinois (2026)"],
     ["2026_JMMDC.jpg", "Mathematics Advocacy at the JMM", "Washington D.C. (2026)"],
     ["2026_JSmithSphynx.jpg", "GilGal Sculpture Garden (with Joseph Smith)", "Salt Lake City, Utah (2026)"],
-    ["2026_PhDGrad.HEIC", "Graduation", "Chicago, Illinois (2026)"],
-    ["2026_SearsTower.HEIC", "Tall Jump", "Sears Tower, Chicago, Illinois (2026)"],
+    ["2026_PhDGrad.jpg", "Graduation", "Chicago, Illinois (2026)"],
+    ["2026_SearsTower.jpg", "Tall Jump", "Sears Tower, Chicago, Illinois (2026)"],
     ["2026_ThesisDefense.jpeg", "My Thesis Defense", "Chicago, Illinois (2026)"]
   ];
 
