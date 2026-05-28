@@ -10,22 +10,22 @@
 main:
 
   - title: "Publications"
-    url: /publications/
+    url: /publications
 
   - title: "Research"
-    url: /research/
+    url: /research
 
   - title: "Notes"
-    url: /notes/    
+    url: /notes  
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching
    
   - title: "Service"
-    url: /service/
+    url: /service
 
   - title: "Fun"
-    url: /fun/
+    url: /fun
 
   - title: "Cat"
-    url: /cat/
+    url: /cat
