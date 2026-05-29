@@ -69,7 +69,7 @@
     slide.className = "swiper-slide";
 
     slide.innerHTML = `
-      <img src="${image.src}" alt="${image.title}">
+      <img src="${image.src}" alt="${image.title}" loading="lazy" decoding = "async">
 
       <div class="carousel-caption">
         <h3>${image.title}</h3>
