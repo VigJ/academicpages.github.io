@@ -117,8 +117,6 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
 
 <script>
 
-document.addEventListener('DOMContentLoaded', function() {
-
 //images in images/carousel. just add another triple here
   const images = [
     ["2018_SCTFinish.jpg", "Racing a Solar Car", "Bend, Oregon (2018)"],
@@ -220,7 +218,6 @@ document.addEventListener('DOMContentLoaded', function() {
       enabled: true,
     },
   });
-}); 
-  </script>
+ </script>
 
 </div>
