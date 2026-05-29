@@ -31,11 +31,11 @@ ArXiv
 <br>
 <em>
 joint with
-<a href="https://sites.google.com/view/martabenozzo">Marta Benozzo</a>,
-<a href="https://vaibhav-pandey1.github.io/">Vaibhav Pandey</a>,
-<a href="https://sites.google.com/cimat.mx/pedroramirezmoreno/home-page">Pedro Ramírez-Moreno</a>,
-<a href="https://www.math.utah.edu/~schwede/">Karl Schwede</a>, and
-<a href="https://math.ua.edu/people/prashanth-sridhar/">Prashanth Sridhar</a>
+<a href="https://sites.google.com/view/martabenozzo" target="_blank" rel="noopener noreferrer">Marta Benozzo</a>,
+<a href="https://vaibhav-pandey1.github.io/" target="_blank" rel="noopener noreferrer">Vaibhav Pandey</a>,
+<a href="https://sites.google.com/cimat.mx/pedroramirezmoreno/home-page" target="_blank" rel="noopener noreferrer">Pedro Ramírez-Moreno</a>,
+<a href="https://www.math.utah.edu/~schwede/" target="_blank" rel="noopener noreferrer">Karl Schwede</a>, and
+<a href="https://math.ua.edu/people/prashanth-sridhar/" target="_blank" rel="noopener noreferrer">Prashanth Sridhar</a>
 </em>
 <br>
   Mathematische Zeitschrift, <em>(to appear)</em>
@@ -84,7 +84,7 @@ ArXiv
 <br>
 <em>
 joint with
-<a href="https://jjgarzella.github.io/">Jack J Garzella</a>,
+<a href="https://jjgarzella.github.io/" target="_blank" rel="noopener noreferrer">Jack J Garzella</a>,
 </em>
 <br>
 Submitted.
@@ -96,14 +96,14 @@ Research Experiences
 -------------------- 
 *(These were mostly from undergrad and early in graduate school and don't necessarily represent my current interests.)* 
 
-- **(Summer '22) University of Michigan MREG** As a graduate student, I worked with a number of other graduate students (and was mentored by Professor [Rachel Webb](https://sites.google.com/view/rachel-webb)) to investigate problems in Geometric Invariant Theory.<a href="files/2022_MREGwriteup.pdf"
+- **(Summer '22) University of Michigan MREG** As a graduate student, I worked with a number of other graduate students (and was mentored by Professor [Rachel Webb](https://sites.google.com/view/rachel-webb){:target="_blank" rel="noopener noreferrer"}) to investigate problems in Geometric Invariant Theory.<a href="files/2022_MREGwriteup.pdf"
    class="btn btn--primary"
    style="text-decoration: none;"
    target="_blank">
 Paper
 </a>
 
-- **(Summer '19) University of Michigan REU** I worked under professor [Andrew Snowden](http://www-personal.umich.edu/~asnowden/) to study and classify certain symmetric ideals of the infinite variable polynomial ring. We developed a geometric structure for these symmetric ideals and provided an equivalence similar to the Nullstellensatz. <a href="https://lsa.umich.edu/content/dam/math-assets/math-document/reu-documents/ugradreu/2019/Jagathese,Vignesh.pdf"
+- **(Summer '19) University of Michigan REU** I worked under professor [Andrew Snowden](http://www-personal.umich.edu/~asnowden/){:target="_blank" rel="noopener noreferrer"} to study and classify certain symmetric ideals of the infinite variable polynomial ring. We developed a geometric structure for these symmetric ideals and provided an equivalence similar to the Nullstellensatz. <a href="https://lsa.umich.edu/content/dam/math-assets/math-document/reu-documents/ugradreu/2019/Jagathese,Vignesh.pdf"
    class="btn btn--primary"
    style="text-decoration: none;"
    target="_blank">
@@ -116,7 +116,7 @@ Paper
 Poster
 </a>
 
-- **(Fall '18) LoGM** I worked under professor [Alex Wright](http://www-personal.umich.edu/~alexmw/) with a team of undergraduate and  graduate researchers to  build computer tools (written in C++ primarily) to aid in finding and visualizing saddle connections within triangulations on a surface. <a href="files/2018_LOGM_Poster.pdf"
+- **(Fall '18) LoGM** I worked under professor [Alex Wright](http://www-personal.umich.edu/~alexmw/){:target="_blank" rel="noopener noreferrer"} with a team of undergraduate and  graduate researchers to  build computer tools (written in C++ primarily) to aid in finding and visualizing saddle connections within triangulations on a surface. <a href="files/2018_LOGM_Poster.pdf"
    class="btn btn--primary"
    style="text-decoration: none;"
    target="_blank">

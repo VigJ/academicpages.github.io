@@ -22,7 +22,8 @@ Outreach
 -------- 
 
 - **(2022-2026) Math Circles of Chicago Instructor** <br> 
-  Throughout of graduate school I worked with [Math Circles of Chicago](https://www.mathcirclesofchicago.org/) as an instructor for their weekend and summer math programs. It's a great program and I cannot recommend working with them enough. 
+  Throughout of graduate school I worked with [Math Circles of Chicago](https://www.mathcirclesofchicago.org/){:target="_blank" rel="noopener noreferrer"} as an instructor for their weekend and summer math programs. It's a great program and I cannot recommend working with them enough. 
+
 - **(November 2024) Sonia Kowalevsky Math Day Organizer** <br> 
   I helped organize an annual outreach program to help spark young womens' interest in math.
 - **(2024) Young Scholars Program Instructor** <br> 

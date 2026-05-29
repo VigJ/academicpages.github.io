@@ -5,9 +5,9 @@ author_profile: true
 ---
 ![One of my students made cookies for me! It was a very thoughtful (and tasty) gift!](/images/TeachingCookie.jpg){: width="30%" .align-right style="margin-left: 0.4em;"}
 
-I view teaching as a fundamental component of my role as an academic. To be an effective teacher is to be an effective mathematical communicator, an enthusiastic ambassador of mathematics, and a positive, welcoming presence for students. I wholeheartedly endorse Federico Ardila-Mantilla's [axioms for teaching mathematics](https://www.ams.org/publications/journals/notices/201610/rnoti-p1164.pdf) and treat them as guiding principals within my classroom.
+I view teaching as a fundamental component of my role as an academic. To be an effective teacher is to be an effective mathematical communicator, an enthusiastic ambassador of mathematics, and a positive, welcoming presence for students. I wholeheartedly endorse Federico Ardila-Mantilla's [axioms for teaching mathematics](https://www.ams.org/publications/journals/notices/201610/rnoti-p1164.pdf){:target="_blank" rel="noopener noreferrer"} and treat them as guiding principals within my classroom.
 
-I'm a big advocate for [Inquiry Based Learning](https://www.ceebl.manchester.ac.uk/ebl/) at all levels of mathematical instruction, and have implemented it in many of my courses below. If you are interested in transitioning your class to an IBL format, please reach out! I would love to chat. 
+I'm a big advocate for [Inquiry Based Learning](https://www.ceebl.manchester.ac.uk/ebl/){:target="_blank" rel="noopener noreferrer"} at all levels of mathematical instruction, and have implemented it in many of my courses below. If you are interested in transitioning your class to an IBL format, please reach out! I would love to chat. 
 
 <br>
 
