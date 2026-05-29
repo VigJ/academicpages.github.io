@@ -120,8 +120,36 @@ const images = [
     `;
 
     gallery.appendChild(item);
-    item.addEventListener("click", () => {
-    item.classList.toggle("expanded");
-});
+
+  //when you click the image, show the full resolution one
+  item.addEventListener("click", () => {
+      const img = item.querySelector("img");
+
+      const filename = img.src.split("/").pop(); // pulls out number from file name
+
+      const dot = filename.lastIndexOf(".");
+      const stem = filename.slice(0, dot);
+      const ext = filename.slice(dot + 1);
+
+      const fullsizeSrc = `/images/Cat_Fullsize/${stem}_fullsize.${ext}`; //finds the "_fullsize" version
+
+      // If already expanded, collapse
+      if (item.classList.contains("expanded")) {
+        img.src = `/images/Cat/${filename}`;
+        item.classList.remove("expanded");
+        return;
+      }
+
+      // preload full image first to prevent delay/image flashing
+      const preload = new Image();
+
+      preload.onload = () => {
+        img.src = fullsizeSrc;
+        item.classList.add("expanded");
+      };
+
+      preload.src = fullsizeSrc;
+
+    });
 });
 
