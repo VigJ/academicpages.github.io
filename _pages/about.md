@@ -115,6 +115,6 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- the images get stored here, too-->
+<!-- to add images to the carousel, go to the js here:-->
   <script src="/assets/js/carousel.js"></script>
 </div>
