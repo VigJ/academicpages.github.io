@@ -111,6 +111,7 @@ const images = [
         src="/images/Cat/${filename}"
         alt="${caption}"
         loading="lazy"
+        decoding="async"
       >
 
       <div class="gallery-caption">

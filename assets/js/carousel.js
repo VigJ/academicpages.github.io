@@ -110,10 +110,9 @@
   });
 
 
-// preload previous and next slides
+// preload next slide
 swiper.on("slideChange", () => {
-  const nextSlide =
-    swiper.slides[swiper.activeIndex + 1];
+  const nextSlide = swiper.slides[swiper.activeIndex + 1];
 
   if (!nextSlide) return;
 
