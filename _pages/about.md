@@ -117,7 +117,9 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
 
 <script>
 
-  //images in images/carousel. just add another triple here
+document.addEventListener('DOMContentLoaded', function() {
+
+//images in images/carousel. just add another triple here
   const images = [
     ["2018_SCTFinish.jpg", "Racing a Solar Car", "Bend, Oregon (2018)"],
     ["2020_Arlington.jpg", "Working in Industry", "Arlington, Virginia (2020)"],
@@ -218,6 +220,7 @@ I am currently a Visiting Assistant Professor at North Dakota State University, 
       enabled: true,
     },
   });
-</script>
+}); 
+  </script>
 
 </div>
