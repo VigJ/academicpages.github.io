@@ -69,7 +69,12 @@
     slide.className = "swiper-slide";
 
     slide.innerHTML = `
-      <img src="${image.src}" alt="${image.title}" loading="lazy" decoding = "async">
+      <img
+        src="${image.src}"
+        alt="${image.title}"
+        loading="lazy"
+        decoding="async"
+      >
 
       <div class="carousel-caption">
         <h3>${image.title}</h3>
@@ -80,8 +85,10 @@
     wrapper.appendChild(slide);
   });
 
-  new Swiper(".random-carousel", {
+ const swiper = new Swiper(".random-carousel", {
     loop: true,
+
+    watchSlidesProgress: true,
 
     autoplay: {
       delay: 3500,
@@ -101,3 +108,19 @@
       enabled: true,
     },
   });
+
+
+// preload previous and next slides
+swiper.on("slideChange", () => {
+  const nextSlide =
+    swiper.slides[swiper.activeIndex + 1];
+
+  if (!nextSlide) return;
+
+  const img = nextSlide.querySelector("img");
+
+  if (img && !img.complete) {
+    const preload = new Image();
+    preload.src = img.src;
+  }
+});
