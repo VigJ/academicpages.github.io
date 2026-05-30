@@ -45,9 +45,12 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands",
 
-    "catpuccin_buttons"
+    "catpuccin_buttons",
+    "catpuccin_titles"
 ;
 
+
+// no underlines on hyperlinks (global setting)
 .page__content a {
   text-decoration: none !important;
 }

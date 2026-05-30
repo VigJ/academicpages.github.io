@@ -1,0 +1,25 @@
+/* ==========================================================================
+   CATPPUCCIN GRADIENT PAGE TITLES
+   ========================================================================== */
+
+.page__title {
+    background: linear-gradient(
+        90deg,
+        #f5a97f 0%,   /* peach (warm start like catppuccin.com) */
+        #f5bde6 20%,  /* pink */
+        #c6a0f6 40%,  /* mauve */
+        #8aadf4 60%,  /* blue */
+        #7dc4e4 80%,  /* sapphire */
+        #8bd5ca 100%  /* teal finish */
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}

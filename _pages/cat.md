@@ -1,9 +1,9 @@
 ---
 permalink: /cat
-title: "Pictures of Robin doing things in various places"
+title: "Pictures of Robin"
 author_profile: true
 ---
-
+(doing things, in various places.)
 <style>
   .quilt-gallery {
     column-count: 3;
