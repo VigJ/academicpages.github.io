@@ -82,7 +82,7 @@ ArXiv
 <br>
 <em>
 joint with
-<a href="https://jjgarzella.github.io/" target="_blank" rel="noopener noreferrer">Jack J Garzella</a>,
+<a href="https://jjgarzella.github.io/" target="_blank" rel="noopener noreferrer">Jack J Garzella</a>
 </em>
 <br>
 Submitted.

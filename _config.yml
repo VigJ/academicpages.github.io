@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "catpuccindarker" # The default options are "default", "air", "sunrise", "mint", "dirt" and "contrast. I added catpuccin and catpuccindarker "
+site_theme               : "catpuccindarkest" # The default options are "default", "air", "sunrise", "mint", "dirt" and "contrast. I added catpuccin, catpuccindarker, and catpuccindarkest "
 title                    : "Vignesh Jagathese"
 title_separator          : "-"
 name                     : &name "Vignesh Jagathese"
