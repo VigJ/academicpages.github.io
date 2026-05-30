@@ -1,0 +1,55 @@
+/* ==========================================================================
+    CATPPUCCIN FRAPPÉ THEME - DARK VERSION
+    ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #8caaee; // Blue
+$dark-primary-color         : mix(#000, $primary-color, 40%);
+$darker-primary-color       : mix(#000, $primary-color, 60%);
+$light-primary-color        : mix(#fff, $primary-color, 25%);
+
+$background                 : #303446; // Base
+$background-light           : #414559; // Surface0
+$background-lighter         : #c6d0f5; // Text
+$text                       : #c6d0f5; // Text
+$link                       : #8caaee; // Blue
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : #babbf1; // Lavender
+$footer                     : #232634; // Crust
+
+/* Color codes used for the site */
+$danger-color               : #e78284; // Red
+$info-color                 : #85c1dc; // Sapphire
+$notice-color               : #ca9ee6; // Mauve
+$success-color              : #a6d189; // Green
+$warning-color              : #e5c890; // Yellow
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$background-light};
+    --global-dark-border-color          : #{$footer};
+    --global-code-background-color      : #{$footer};
+    --global-code-text-color            : #{$text};
+    --global-fig-caption-color          : #{$light-primary-color};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-light};
+    --global-link-color-visited         : #ca9ee6;
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #a5adce;
+    --global-thead-color                : #{$background-light};
+}
