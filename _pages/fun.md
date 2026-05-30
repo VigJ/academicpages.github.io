@@ -30,7 +30,7 @@ Alongside the fun stuff, there are a few *(in my view, apolitical)* things that 
 
 <p>
 <a href="/oopsie"
-   class="btn btn--primary"
+   class="btn btn--ctp-peach"
    style="text-decoration: none;"
    target="_blank">
 Urbanism and Public Transit 
@@ -40,7 +40,7 @@ Urbanism and Public Transit
 
 <p>
 <a href="/oopsie"
-   class="btn btn--primary"
+   class="btn btn--ctp-blue"
    style="text-decoration: none;"
   target="_blank">
 Privacy and Intentional use of Technology
@@ -50,7 +50,7 @@ Privacy and Intentional use of Technology
 
 <p>
 <a href="/oopsie"
-   class="btn btn--primary"
+   class="btn btn--ctp-green"
    style="text-decoration: none;"
   target="_blank">
 Supporting Educators and Education for All

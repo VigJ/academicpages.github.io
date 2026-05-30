@@ -15,28 +15,28 @@ Instructor Positions
 -------------------- 
 - **(Spring 2025, UIC) Math 109: College Algebra Workshop**
 <a href="/files/2025_109Syllabus.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 Syllabus
 </a>
 - **(Fall 2023, UIC) Math 090: Intermediate Algebra** 
 <a href="/files/2023_Math090Syllabus.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 Syllabus
 </a>
 - **(Spring 2023, UIC) Math 104: Mathematical Reasoning Workshop**
 <a href="/files/2023_Math104Syllabus.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 Syllabus
 </a>
 - **(Fall 2022, UIC) Math 109: College Algebra Workshop** 
 <a href="/files/2022_109Syllabus.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 Syllabus

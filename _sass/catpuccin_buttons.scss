@@ -1,0 +1,63 @@
+/* ==========================================================================
+   CATPPUCCIN PASTEL BUTTONS
+   ========================================================================== */
+
+.btn--ctp-blue,
+.btn--ctp-green,
+.btn--ctp-pink,
+.btn--ctp-peach {
+    display: inline-block;
+    padding: 0.65em 1.3em;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    text-decoration: none !important;
+    color: #11111b !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: all 0.2s ease;
+}
+
+.btn--ctp-blue:hover,
+.btn--ctp-green:hover,
+.btn--ctp-pink:hover,
+.btn--ctp-peach:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    color: #11111b !important;
+}
+
+/* Blue button */
+.btn--ctp-blue {
+    background: linear-gradient(
+        135deg,
+        #89b4fa 0%,
+        #74c7ec 100%
+    );
+}
+
+/* Green button */
+.btn--ctp-green {
+    background: linear-gradient(
+        135deg,
+        #a6e3a1 0%,
+        #94e2d5 100%
+    );
+}
+
+/* Pink/Mauve button */
+.btn--ctp-pink {
+    background: linear-gradient(
+        135deg,
+        #f5c2e7 0%,
+        #cba6f7 100%
+    );
+}
+
+/* Peach/Yellow button */
+.btn--ctp-peach {
+    background: linear-gradient(
+        135deg,
+        #fab387 0%,
+        #f9e2af 100%
+    );
+}

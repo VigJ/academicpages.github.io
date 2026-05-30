@@ -13,14 +13,13 @@ Conferences, Reading Groups
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 12px;
   padding: 1rem 1.25rem;
-  color: white;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 ">
 
 <p>
 <a href="/files/2025_BanffNotes.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-green"
    style="text-decoration: none;"
    target="_blank">
 (Fall 2025) Banff Workshop on Singularities
@@ -30,7 +29,7 @@ Conferences, Reading Groups
 <p>
 These are notes from a workshop on Notions of Singularity in Different Characteristics
 <a href="https://www.birs.ca/events/2025/5-day-workshops/25w5409"
-   style="color:white; text-decoration: underline;"
+   style="text-decoration: underline;"
    target="_blank">
 [25w5409]
 </a>
@@ -41,7 +40,7 @@ at Banff Interational Research Station, held in October 2025. Much like my notes
 
 <p>
 <a href="/files/2025_SRI.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-green"
    style="text-decoration: none;"
    target="_blank">
 (Summer '25) SRI Bootcamp
@@ -51,7 +50,7 @@ at Banff Interational Research Station, held in October 2025. Much like my notes
 <p>
 These are notes from the 
 <a href="https://sites.google.com/view/agbootcamp2025"
-   style="color:white; text-decoration: underline;"
+   style="text-decoration: underline;"
    target="_blank">
 2025
 </a>
@@ -62,7 +61,7 @@ These are notes from the
 
 <p>
 <a href="/files/2024_MMCG.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-green"
    style="text-decoration: none;"
    target="_blank">
 (Fall '24) Methods in Mixed Characteristic Geometry (MMCG)
@@ -72,7 +71,7 @@ These are notes from the
 <p>
 These are notes from a Fall Course on geometry in mixed characteristic, held at Johannes Gutenberg University in Mainz, Germany in October 2024. The school was organized by Manuel Blickle, Karl Schwede, and Kevin Tucker. The main focus of this course was developing the p-adic Riemann Hilbert Correspondence and Prismatic Cohomology and applying them within algebraic geometry and commutative algebra. For suggested background and (far better) notes written by a subset of the speakers, see
 <a href="https://sites.google.com/view/mmcg2024/program?authuser=0"
-   style="color:white; text-decoration: underline;"
+   style="text-decoration: underline;"
    target="_blank">
 here.
 </a>
@@ -82,7 +81,7 @@ here.
 
 <p>
 <a href="/files/2023_PerfectoidSpacesNotes.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-green"
    style="text-decoration: none;"
    target="_blank">
 (Fall '23) Perfectoid Spaces (Mini-Course)
@@ -97,7 +96,7 @@ These are notes from a mini-course on Perfectoid Spaces taught by Kevin Tucker a
 
 <p>
 <a href="/files/2023_MSRISummerSchool.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-green"
    style="text-decoration: none;"
    target="_blank">
 (Summer '23) MSRI/SLMath CMND Summer School
@@ -117,14 +116,13 @@ Courses
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 12px;
   padding: 1rem 1.25rem;
-  color: white;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 ">
 
 <p>
 <a href="/files/2023_AlgebraicGeometry_II.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 (Spring '23) Math 553: Algebraic Geometry II
@@ -139,7 +137,7 @@ This course covered chapters 2 and 3 of Hartshorne's book.
 
 <p>
 <a href="/files/2022_UIC_CommutativeAlgebra.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 (Fall '22) Math 520: Commutative Algebra
@@ -154,7 +152,7 @@ This is a good companion set of notes to the last time I took commutative algebr
 
 <p>
 <a href="/files/2022_RiemannSurfaces.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 (Fall '22) Math 554: Complex Manifolds
@@ -169,7 +167,7 @@ While these notes are only for a bit more than half the course, they are organiz
 
 <p>
 <a href="/files/2019_UMich_CommutativeAlgebraIBLSolutions.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 (Fall '19) Math 614: Commutative Algebra
@@ -179,7 +177,7 @@ While these notes are only for a bit more than half the course, they are organiz
 <p>
 This course was taught in an Inquiry Based Learning format. Attached are my solutions to the in-class exercises. More detailed course information can be found
 <a href="http://www.math.lsa.umich.edu/~kesmith/Math614.html"
-   style="color:white; text-decoration: underline;"
+   style="text-decoration: underline;"
    target="_blank">
 here.
 </a>
@@ -189,7 +187,7 @@ here.
 
 <p>
 <a href="/files/2019_AlgebraII.pdf"
-   class="btn btn--primary"
+   class="btn btn--ctp-pink"
    style="text-decoration: none;"
    target="_blank">
 (Winter '19) Math 594: Graduate Algebra II
@@ -204,13 +202,13 @@ Groups, Fields, Representations, Galois Theory, and some Algebraic Number Theory
 
 <p>
 <a href="/files/2015_APUSH.docx"
-   class="btn btn--primary"
+   class="btn btn--ctp-blue"
    style="text-decoration: none;"
    target="_blank">
 (2015) AP US History
 </a>
 <a href="/files/2014_APWH.docx"
-   class="btn btn--primary"
+   class="btn btn--ctp-blue"
    style="text-decoration: none;"
    target="_blank">
 (2014) AP World History
